@@ -46,7 +46,7 @@ public class NoteComposition extends MusicalComposition {
     }
 
     private void playPause(){
-        File soundFile = new File("C:/Users/viliu/Desktop/AudioRedactorSounds/notes/pause.wav");
+        File soundFile = new File("AudioRedactorSounds/notes/pause.wav");
         try {
             Clip clip = AudioSystem.getClip();
             clip.open(AudioSystem.getAudioInputStream(soundFile));
@@ -67,7 +67,7 @@ public class NoteComposition extends MusicalComposition {
         super.play();
         playPause();
         for(int i = 0; i < getNotes().length; i++){
-            File soundFile = new File("C:/Users/viliu/Desktop/AudioRedactorSounds/notes/"+getNotes()[i]+".wav");
+            File soundFile = new File("AudioRedactorSounds/notes/"+getNotes()[i]+".wav");
             try {
                 Clip clip = AudioSystem.getClip();
                 clip.open(AudioSystem.getAudioInputStream(soundFile));
