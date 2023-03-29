@@ -1,5 +1,5 @@
 import MusicRedactor.MusicalComposition;
-import MusicRedactor.Mp3.Mp3MusicComposition;
+import MusicRedactor.Wav.WavMusicComposition;
 import MusicRedactor.Note.NoteComposition;
 
 public class Main {
@@ -14,13 +14,13 @@ public class Main {
 
         for(int i = 0; i < 2; i++)
         {
-            sounds[i] = new Mp3MusicComposition("sound"+i);
-            ((Mp3MusicComposition)sounds[i]).setSongLengthInSeconds(2);
+            sounds[i] = new WavMusicComposition("sound"+i);
+            ((WavMusicComposition)sounds[i]).setSongLengthInSeconds(2);
             sounds[i].play();
         }
 
-        MusicalComposition sound2 = new Mp3MusicComposition("Wow");
-        ((Mp3MusicComposition)sound2).setSongLengthInSeconds(3);
+        MusicalComposition sound2 = new WavMusicComposition("Wow");
+        ((WavMusicComposition)sound2).setSongLengthInSeconds(3);
         sound2.apendDescription();
         sound2.printDescription();
         sound2.play();
