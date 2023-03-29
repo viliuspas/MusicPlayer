@@ -25,7 +25,7 @@ public class Mp3MusicComposition extends MusicalComposition {
     }
 
     private void getDefaultSongLength(){
-        File soundFile = new File("C:/Users/viliu/Desktop/AudioRedactorSounds/"+songName+".wav");
+        File soundFile = new File("AudioRedactorSounds/"+songName+".wav");
         try {
             Clip clip = AudioSystem.getClip();
             clip.open(AudioSystem.getAudioInputStream(soundFile));
@@ -42,7 +42,7 @@ public class Mp3MusicComposition extends MusicalComposition {
     public void play() {
         System.out.println("");
         super.play();
-        File soundFile = new File("C:/Users/viliu/Desktop/AudioRedactorSounds/"+songName+".wav");
+        File soundFile = new File("AudioRedactorSounds/"+songName+".wav");
         try {
             AudioInputStream audioInputStream = AudioSystem.getAudioInputStream(soundFile);
             Clip clip = AudioSystem.getClip();
