@@ -1,16 +1,16 @@
-package MusicRedactor.Mp3;
+package MusicRedactor.Wav;
 import MusicRedactor.MusicalComposition;
 import javax.sound.sampled.AudioSystem;
 import javax.sound.sampled.Clip;
 import java.io.File;
 import javax.sound.sampled.AudioInputStream;
 
-public class Mp3MusicComposition extends MusicalComposition {
+public class WavMusicComposition extends MusicalComposition {
 
     private int songLengthInSeconds;
     private String songName;
 
-    public Mp3MusicComposition(String songName){
+    public WavMusicComposition(String songName){
         super(songName);
         this.songName = songName;
         getDefaultSongLength();
